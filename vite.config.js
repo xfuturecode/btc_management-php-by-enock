@@ -14,4 +14,8 @@ export default defineConfig({
             '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
         }
     },
+    server: {
+        host: '0.0.0.0',              // écoute sur toutes les interfaces
+        port: process.env.PORT || 4173, // Render fournit le port via $PORT
+    }
 });
